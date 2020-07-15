@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+# Inherit vendor
+$(call inherit-product, vendor/xiaomi/pine/pine-vendor.mk)
+
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -45,5 +51,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Inherit vendor
-$(call inherit-product, vendor/xiaomi/pine/pine-vendor.mk)
+# Inherit from sdm439-common
+$(call inherit-product, device/xiaomi/sdm439-common/msm8937.mk)
