@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# inherit from common sdm439-common
+-include device/xiaomi/sdm439-common/BoardConfigCommon.mk
+
 DEVICE_PATH := device/xiaomi/pine
 BOARD_VENDOR := xiaomi
 
