@@ -30,6 +30,9 @@ TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_USES_64_BIT_BINDER := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := pine
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-03-01
 
