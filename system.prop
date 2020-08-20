@@ -1,8 +1,0 @@
-audio_para_version=C3E-Audiopara-V30-20190929
-camera.hal1.packagelist=com.skype.raider,com.google.android.talk
-debug.egl.hw=1
-debug.sf.hw=1
-persist.dpm.feature=1
-rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-ro.audio.soundfx.dirac=true
-ro.config.max_starting_bg=8
